@@ -1,0 +1,14 @@
+{
+  "name": "cache-pill",
+  "version": "0.1.0",
+  "description": "One tiny line above the prompt: last-turn prompt-cache hit rate and time left before the cache goes cold.",
+  "types": "./types/index.d.ts",
+  "userConfig": {
+    "cache_ttl": {
+      "type": "string",
+      "title": "Prompt-cache TTL",
+      "description": "1h (subscription) or 5m (API key / usage credits).",
+      "default": "1h"
+    }
+  }
+}

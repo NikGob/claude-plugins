@@ -1,0 +1,13 @@
+{
+  "$schema": "https://anthropic.com/claude-code/marketplace.schema.json",
+  "name": "nikgob",
+  "description": "NikGob's Claude Code plugins",
+  "owner": { "name": "NikGob", "url": "https://github.com/NikGob" },
+  "plugins": [
+    {
+      "name": "cache-pill",
+      "description": "One line above the prompt in the Claude desktop app: prompt-cache hit rate and a countdown until the cache goes cold.",
+      "source": "./plugins/cache-pill"
+    }
+  ]
+}
