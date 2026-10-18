@@ -19,12 +19,19 @@ Reads only token counts the app already has. Makes no network calls and writes n
 
 ### Install
 
-Type at the prompt of a Claude Code session:
+In a terminal (PowerShell, cmd or bash) with the `claude` CLI:
+
+```
+claude plugin marketplace add NikGob/claude-plugins
+claude plugin install cache-pill@nikgob --config cache_ttl=1h
+```
+
+Or at the prompt of a Claude Code terminal session:
 
 ```
 /plugin install cache-pill --marketplace NikGob/claude-plugins
 ```
 
-Answer `y` to add the marketplace, then pick a scope. The line appears in new sessions in the desktop app's Code tab.
+Then open a new session in the desktop app's Code tab. The plugin does not show in claude.ai's plugin directory: it installs from this GitHub repository.
 
 Needs a recent Claude Code with mods (v2.1.287 or later); keep the desktop app updated. Only one plugin can draw above the prompt, so turn off other status-band plugins (like Desktop Statusline).
